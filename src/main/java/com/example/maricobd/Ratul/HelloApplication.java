@@ -1,4 +1,4 @@
-package com.example.maricobd;
+package com.example.maricobd.Ratul;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

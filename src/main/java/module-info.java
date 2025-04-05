@@ -3,6 +3,6 @@ module com.example.maricobd {
     requires javafx.fxml;
 
 
-    opens com.example.maricobd to javafx.fxml;
-    exports com.example.maricobd;
+    exports com.example.maricobd.Ratul;
+    opens com.example.maricobd.Ratul to javafx.fxml;
 }

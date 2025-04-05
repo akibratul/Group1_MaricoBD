@@ -1,4 +1,4 @@
-package com.example.maricobd;
+package com.example.maricobd.Ratul;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
