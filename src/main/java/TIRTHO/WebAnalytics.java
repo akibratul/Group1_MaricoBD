@@ -1,4 +1,4 @@
-package Tirtho;
+package TIRTHO;
 
 public class WebAnalytics {
 }
