@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.maricobd.Tirtho.MarketingAnal.LeadCRM"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.MarketingAnal.LeadCRM">
+   <children>
+      <Label layoutX="200.0" layoutY="14.0" text="Lead Generation and CRM integration" />
+      <TextField layoutX="89.0" layoutY="58.0" />
+      <Label layoutX="22.0" layoutY="62.0" text="Name" />
+      <TextField layoutX="89.0" layoutY="92.0" />
+      <Label layoutX="22.0" layoutY="96.0" text="Phone" />
+      <TextField layoutX="368.0" layoutY="58.0" />
+      <Label layoutX="301.0" layoutY="62.0" text="Email" />
+      <TextField layoutX="368.0" layoutY="101.0" />
+      <Label layoutX="301.0" layoutY="105.0" text="Interents" />
+      <Button layoutX="238.0" layoutY="161.0" mnemonicParsing="false" text="Submit" />
+      <TableView layoutX="82.0" layoutY="200.0" prefHeight="200.0" prefWidth="477.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Lead No." />
+            <TableColumn prefWidth="75.0" text="Name" />
+            <TableColumn prefWidth="75.0" text="Phone" />
+            <TableColumn prefWidth="67.0" text="Email" />
+            <TableColumn prefWidth="83.0" text="Lead Status" />
+            <TableColumn prefWidth="102.0" text="CRM Integration" />
+        </columns>
+      </TableView>
+      <Label layoutX="22.0" layoutY="140.0" text="Lead Status" />
+      <ComboBox layoutX="89.0" layoutY="136.0" prefWidth="150.0" />
+   </children>
 </AnchorPane>
