@@ -4,12 +4,12 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane prefHeight="572.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.MarketingAnal.CustomerSegmentation">
    <children>
-      <ListView layoutX="186.0" layoutY="101.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView layoutX="374.0" layoutY="78.0" prefHeight="200.0" prefWidth="200.0" />
       <Button layoutX="121.0" layoutY="32.0" mnemonicParsing="false" text="Create Segmentation" />
       <Button layoutX="467.0" layoutY="529.0" mnemonicParsing="false" text="Back" />
       <TableView layoutX="84.0" layoutY="329.0" prefHeight="200.0" prefWidth="404.0">
@@ -20,5 +20,6 @@
             <TableColumn prefWidth="130.0" text="Average Cart Value" />
         </columns>
       </TableView>
+      <TextArea layoutX="21.0" layoutY="78.0" prefHeight="200.0" prefWidth="303.0" text="Will show all the customers types in listview, on clicking customer types, information of  customers of those types will show on the table view. Here customers are devided based on High-value customers,Frequent buyers,First-time visitors,Abandoned cart users. " />
    </children>
 </AnchorPane>
