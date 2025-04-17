@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Tirtho.SalesRevReport"
-            prefHeight="400.0" prefWidth="600.0">
 
-</AnchorPane>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.TIRTHO.SalesRevReport">
+   <children>
+      <DatePicker />
+      <DatePicker />
+      <Button mnemonicParsing="false" text="Button" />
+      <TableView prefHeight="200.0" prefWidth="442.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Product" />
+          <TableColumn prefWidth="75.0" text="Revenue" />
+            <TableColumn prefWidth="123.0" text="Profit Margin" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
