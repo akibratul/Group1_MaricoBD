@@ -1,8 +1,8 @@
-package com.example.maricobd.Tirtho;
+package com.example.maricobd.Tirtho.MarketingAnal;
 
 import javafx.scene.control.Button;
 
-public class MarketingAnalyst {
+public class MarketingAnalystDashboard {
     @javafx.fxml.FXML
     private Button WebAnalyticsButton;
     @javafx.fxml.FXML

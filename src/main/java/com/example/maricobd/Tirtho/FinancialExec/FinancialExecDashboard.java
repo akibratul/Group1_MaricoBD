@@ -1,8 +1,8 @@
-package com.example.maricobd.Tirtho;
+package com.example.maricobd.Tirtho.FinancialExec;
 
 import javafx.scene.control.Button;
 
-public class FinancialExec {
+public class FinancialExecDashboard {
     @javafx.fxml.FXML
     private Button CompetitorBenchmarkingButton;
     @javafx.fxml.FXML

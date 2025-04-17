@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.DigitalMarketing">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.DigitalMarketing">
    <children>
       <Button layoutX="408.0" layoutY="122.0" mnemonicParsing="false" text="Show Campaign ROI" />
       <Button layoutX="408.0" layoutY="158.0" mnemonicParsing="false" text="Clickl Through Rate" />
