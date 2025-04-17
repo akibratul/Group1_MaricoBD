@@ -36,16 +36,15 @@ public class LoginController {
             loginErrorLabel.setText("Please select all fields");
         } else if ("ratul".equals(username.trim()) && "0000".equals(password.trim()) && "Inventory Coordinator".equals(usertype)) {
             loginErrorLabel.setText("Login Successful");
-            //SceneSwitcher.switchTo("Masum/FinanceOfficerDashboard.fxml");
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Masum/FinanceOfficerDashboard.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("InventoryCoordinatorDashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTF.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         } else if ("ratul".equals(username.trim()) && "0000".equals(password.trim()) && "Quality Control Officer".equals(usertype)) {
             loginErrorLabel.setText("Login Successful");
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Masum/SalesAndDistributionOfficerDashboard-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("QualityControlOfficerDashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) usernameTF.getScene().getWindow();
             stage.setScene(new Scene(root));
