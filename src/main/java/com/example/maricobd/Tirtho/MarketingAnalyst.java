@@ -1,4 +1,4 @@
-package com.example.maricobd.TIRTHO;
+package com.example.maricobd.Tirtho;
 
 import javafx.scene.control.Button;
 

@@ -1,4 +1,4 @@
-package com.example.maricobd.TIRTHO;
+package com.example.maricobd.Tirtho;
 
 public class ValidatePayments {
     @javafx.fxml.FXML
