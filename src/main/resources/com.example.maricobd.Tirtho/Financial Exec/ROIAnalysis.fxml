@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.maricobd.Tirtho.FinancialExec.ROIAnalysis"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="746.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.ROIAnalysis">
+   <children>
+      <Label layoutX="197.0" layoutY="425.0" text="Campaign cost vs. revenue generated" />
+      <LineChart layoutX="46.0" layoutY="14.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <TableView layoutX="154.0" layoutY="473.0" prefHeight="200.0" prefWidth="423.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Year" />
+          <TableColumn prefWidth="75.0" text="Total marketing" />
+            <TableColumn prefWidth="75.0" text="Sales costs" />
+            <TableColumn prefWidth="195.0" text="Number of Customers Acquired" />
+        </columns>
+      </TableView>
+      <Label layoutX="155.0" layoutY="690.0" text="Customer Aquisition Costs" />
+      <TableView layoutX="154.0" layoutY="749.0" prefHeight="200.0" prefWidth="378.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Impressions" />
+            <TableColumn prefWidth="75.0" text="Clicks" />
+            <TableColumn prefWidth="75.0" text="CTR" />
+            <TableColumn prefWidth="75.0" text="Conversions" />
+            <TableColumn prefWidth="75.0" text="ROAS" />
+         </columns>
+      </TableView>
+      <Label layoutX="155.0" layoutY="966.0" text="Ad performance metric" />
+   </children>
 </AnchorPane>
