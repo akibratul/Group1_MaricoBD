@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.maricobd.Tirtho.MarketingAnal.WebAnal"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="559.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.MarketingAnal.WebAnal">
+   <children>
+      <Label layoutX="260.0" layoutY="24.0" text="Website Analytics" />
+      <ComboBox layoutX="157.0" layoutY="64.0" prefWidth="150.0" />
+      <Label layoutX="33.0" layoutY="68.0" text="Show Viewers" />
+      <LineChart layoutX="70.0" layoutY="103.0" prefHeight="399.0" prefWidth="500.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </LineChart>
+      <Label layoutX="239.0" layoutY="502.0" text="Shows total viewers by daily, monthly weekly" />
+   </children>
 </AnchorPane>
