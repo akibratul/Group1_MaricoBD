@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QCoInQAuditsController6">
+
+    <children>
+        <Label layoutX="250.0" layoutY="15.0" prefHeight="38.0" prefWidth="194.0" style="-fx-font-size: 18;" text="Internal Quality Audit">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+
+        <!-- Audit Checklist -->
+        <Label layoutX="50" layoutY="70" text="Process Compliance:" />
+        <TextField fx:id="processTF" layoutX="250" layoutY="65" prefWidth="350" />
+
+        <Label layoutX="50" layoutY="110" text="Documentation:" />
+        <TextField fx:id="documentationTF" layoutX="250" layoutY="105" prefWidth="350" />
+
+        <Label layoutX="50" layoutY="150" text="Safety Standards:" />
+        <TextField fx:id="safetyTF" layoutX="250" layoutY="145" prefWidth="350" />
+
+        <!-- Audit Findings -->
+        <Label layoutX="50" layoutY="200" text="Non-Compliance:" />
+        <TextField fx:id="nonComplianceTF" layoutX="250" layoutY="195" prefWidth="350" />
+
+        <Label layoutX="50" layoutY="240" text="Observations:" />
+        <TextField fx:id="observationsTF" layoutX="250" layoutY="235" prefWidth="350" />
+
+        <Label layoutX="50" layoutY="280" text="Recommendations:" />
+        <TextField fx:id="recommendationsTF" layoutX="250" layoutY="275" prefWidth="350" />
+
+        <!-- Buttons -->
+        <Button defaultButton="true" layoutX="250" layoutY="330" onAction="#validateAuditOnAction" prefHeight="38.0" prefWidth="102.0" text="Validate Audit" />
+        <Button layoutX="534.0" layoutY="430.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" text="Logout" />
+
+        <Label fx:id="statusLabel" layoutX="250" layoutY="380" style="-fx-text-fill: green;" text="" />
+      <Button defaultButton="true" layoutX="50.0" layoutY="21.0" mnemonicParsing="false" onAction="#buttononAction" prefHeight="27.0" prefWidth="66.0" text="Back" />
+    </children>
+</AnchorPane>

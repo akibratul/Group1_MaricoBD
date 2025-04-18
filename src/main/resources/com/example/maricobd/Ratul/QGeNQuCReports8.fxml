@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.maricobd.Ratul.QGeNQuCReportsController8">
+
+    <Label layoutX="165.0" layoutY="24.0" style="-fx-font-size: 16px; -fx-font-weight: bold" text="Generate Quality Control Report" />
+
+    <TextField fx:id="rawMaterialTF" layoutX="230.0" layoutY="75.0" prefWidth="250" />
+    <TextField fx:id="productionTF" layoutX="230.0" layoutY="116.0" prefWidth="250" />
+    <TextField fx:id="finishedProductTF" layoutX="230.0" layoutY="152.0" prefWidth="250" />
+    <TextField fx:id="dateRangeTF" layoutX="230.0" layoutY="187.0" prefWidth="250" />
+    <TextField fx:id="productTypeTF" layoutX="230.0" layoutY="229.0" prefWidth="250" />
+    <TextField fx:id="defectTypeTF" layoutX="230.0" layoutY="274.0" prefWidth="250" />
+
+    <Label fx:id="statusLabel" layoutX="14.0" layoutY="321.0" prefHeight="46.0" prefWidth="192.0" style="-fx-text-fill: red" text="" />
+
+    <Button defaultButton="true" layoutX="355.0" layoutY="318.0" onAction="#validateReportOnAction" prefHeight="26.0" prefWidth="73.0" text="Validate" />
+    <Button defaultButton="true" layoutX="230.0" layoutY="318.0" onAction="#generateReportOnAction" prefHeight="26.0" prefWidth="74.0" text="Generate" />
+    <Button defaultButton="true" layoutX="37.0" layoutY="24.0" onAction="#backonAction" prefHeight="26.0" prefWidth="50.0" text="Back" />
+    <Button layoutX="499.0" layoutY="331.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" text="Logout" />
+   <Label layoutX="141.0" layoutY="79.0" text="Raw Material :" />
+   <Label layoutX="146.0" layoutY="120.0" text="Production :" />
+   <Label layoutX="118.0" layoutY="156.0" text="Finished Product :" />
+   <Label layoutX="144.0" layoutY="191.0" text="Date Range :" />
+   <Label layoutX="135.0" layoutY="233.0" text="Product Type :" />
+   <Label layoutX="151.0" layoutY="278.0" text="Defet Type :" />
+
+</AnchorPane>

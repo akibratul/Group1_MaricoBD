@@ -32,7 +32,7 @@ public class QualityControlOfficerDashboardController {
 
     @javafx.fxml.FXML
     public void coIntQauditOnAction (ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QProductInspection1.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QCoInQAudits6.fxml")));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -41,7 +41,7 @@ public class QualityControlOfficerDashboardController {
 
     @javafx.fxml.FXML
     public void evSafetyOnAction (ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QProductInspection1.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QEnvSafComp7.fxml")));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -68,7 +68,7 @@ public class QualityControlOfficerDashboardController {
 
     @javafx.fxml.FXML
     public void gnQeportsOnAction (ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QProductInspection1.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QGeNQuCReports8.fxml")));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -77,7 +77,7 @@ public class QualityControlOfficerDashboardController {
 
     @javafx.fxml.FXML
     public void evSupplierPfOnAction (ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QProductInspection1.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("QEvSupplierPr5.fxml")));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);

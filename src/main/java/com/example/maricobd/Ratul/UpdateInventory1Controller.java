@@ -65,16 +65,19 @@ public class UpdateInventory1Controller {
     }
 
     private void loadProducts() {
-        products.add(new ProductModelClass(" Hair Care", "Parachute Coconut Oil", 155.0, 10000));
+        products.add(new ProductModelClass("Hair Care", "Parachute Coconut Oil", 155.0, 10000));
         products.add(new ProductModelClass("Hair Care", "Parachute Advansed ", 150.0, 50000));
         products.add(new ProductModelClass("Hair Care", "Nihar Naturals", 100.0, 0));
         products.add(new ProductModelClass("Hair Care", "RED King Men’s Cooling Oil", 200.0, 40000));
         products.add(new ProductModelClass("Hair Care", "Livon", 180.0, 30000));
-        products.add(new ProductModelClass("Skin Care", "Parachute SkinPure", .0, 50));
+        products.add(new ProductModelClass("Skin Care", "Parachute SkinPure", 180.0, 50));
         products.add(new ProductModelClass("Skin Care", "Glo-On ", 90.0, 0));
         products.add(new ProductModelClass("Male Grooming", "Studio X", 100.0, 9000));
         products.add(new ProductModelClass("Baby Care", "Parachute Just for Baby", 300.0, 0));
-        products.add(new ProductModelClass("Foods", "Saffola", 500.0, 8000));
+        products.add(new ProductModelClass("Foods", "Saffola", 289.0, 9999));
+        products.add(new ProductModelClass(" Skin Care", "Glo-On", 765.0, 3400));
+        products.add(new ProductModelClass("Male Grooming", "Beardo", 342.0, 1200));
+        products.add(new ProductModelClass("Health & Hygiene", "Mediker SafeLife", 372.0, 8200));
         productTable.setItems(products);
     }
 
