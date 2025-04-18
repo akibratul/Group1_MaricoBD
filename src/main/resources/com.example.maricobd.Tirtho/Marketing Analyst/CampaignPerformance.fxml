@@ -6,19 +6,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="508.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.MarketingAnal.CampaignPerformance">
    <children>
       <Label layoutX="286.0" layoutY="14.0" text="Campaign performance" />
       <Label layoutX="31.0" layoutY="72.0" text="ROI" />
       <Label layoutX="31.0" layoutY="455.0" text="CTR" />
       <Label layoutX="31.0" layoutY="638.0" text="CPA" />
-      <LineChart layoutX="99.0" layoutY="45.0">
+      <LineChart fx:id="chartline" layoutX="99.0" layoutY="45.0">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
         </xAxis>
         <yAxis>
-          <NumberAxis side="LEFT" />
+          <NumberAxis fx:id="yaxis" lowerBound="-50.0" side="LEFT" upperBound="50.0" />
         </yAxis>
       </LineChart>
    </children>
