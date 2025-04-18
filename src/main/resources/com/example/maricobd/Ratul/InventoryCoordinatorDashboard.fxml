@@ -45,12 +45,12 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="377.0" layoutY="247.0" mnemonicParsing="false" text="Damage Goods">
+      <Button defaultButton="true" layoutX="377.0" layoutY="247.0" mnemonicParsing="false" onAction="#damageGoodsOnAction" text="Damage Goods">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="344.0" layoutY="312.0" mnemonicParsing="false" text="Storage Safety Checkup">
+      <Button defaultButton="true" layoutX="344.0" layoutY="312.0" mnemonicParsing="false" onAction="#storageSafetyCkOnAction" text="Storage Safety Checkup">
          <font>
             <Font size="18.0" />
          </font>

@@ -32,11 +32,10 @@ public class StockAnalysisController6 {
             return;
         }
 
-        // Simulated update logic
         statusLabel.setText("Inventory adjusted. Notes: " + notes);
         showAlert("Issue resolved successfully!");
 
-        // Clear fields
+
         missingStockTF.clear();
         overstockTF.clear();
         notesTF.clear();
@@ -49,7 +48,6 @@ public class StockAnalysisController6 {
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-        System.out.println("Logged out."); // Replace with actual scene switching
     }
 
     private void showAlert(String msg) {
