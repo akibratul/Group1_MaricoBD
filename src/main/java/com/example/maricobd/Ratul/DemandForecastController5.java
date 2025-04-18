@@ -21,7 +21,7 @@ public class DemandForecastController5 {
 
     @FXML
     public void initialize() {
-        productCB.getItems().addAll("Chips", "Oil", "Soap", "Biscuit");
+        productCB.getItems().addAll("Hair Care", "Skin Care", "Baby Care", "Health & Hygiene", "Foods");
         timePeriodCB.getItems().addAll("Last Week", "Last Month", "Last 4 Months");
     }
 

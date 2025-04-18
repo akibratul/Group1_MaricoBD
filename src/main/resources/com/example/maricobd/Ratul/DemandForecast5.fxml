@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.DemandForecastController5">
+
+    <Label layoutX="85.0" layoutY="71.0" text="Product:" />
+    <ComboBox fx:id="productCB" layoutX="152.0" layoutY="67.0" prefWidth="200" />
+
+    <Label layoutX="63.0" layoutY="115.0" text="Time Period:" />
+    <ComboBox fx:id="timePeriodCB" layoutX="152.0" layoutY="111.0" prefWidth="200" />
+
+    <Button defaultButton="true" layoutX="408.0" layoutY="89.0" onAction="#generateForecastOnAction" text="Generate Forecast">
+      <font>
+         <Font size="14.0" />
+      </font></Button>
+
+    <TextArea fx:id="forecastTA" layoutX="30.0" layoutY="159.0" prefHeight="150" prefWidth="540" wrapText="true" />
+
+    <Button defaultButton="true" layoutX="30.0" layoutY="14.0" onAction="#backonAction" prefHeight="26.0" prefWidth="66.0" text="Back" />
+    <Button layoutX="497.0" layoutY="336.0" onAction="#logOutOnAction" prefHeight="37.0" prefWidth="66.0" text="Logout" />
+   <Label layoutX="202.0" layoutY="9.0" prefHeight="26.0" prefWidth="226.0" text="Demand Forecast ">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+
+</AnchorPane>
