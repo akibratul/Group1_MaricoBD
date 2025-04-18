@@ -1,5 +1,9 @@
 package com.example.maricobd.Tirtho.FinancialExec;
 
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class ValidatePayments {
     @javafx.fxml.FXML
     private TableColumn StatusColumn;

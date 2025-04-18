@@ -22,7 +22,7 @@ public class CampaignPerformance implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         XYChart.Series<String, Integer> seriesHigh = new XYChart.Series<>();
-        seriesHigh.setName("Low");
+        seriesHigh.setName("High");
         seriesHigh.getData().add(new XYChart.Data<>("Jan", -60));
         seriesHigh.getData().add(new XYChart.Data<>("Feb", -50));
         seriesHigh.getData().add(new XYChart.Data<>("Mar", -40));
@@ -36,16 +36,18 @@ public class CampaignPerformance implements Initializable {
         seriesHigh.getData().add(new XYChart.Data<>("Dec", 60));
 
         XYChart.Series<String, Integer> serieslOW = new XYChart.Series<>();
-        seriesHigh.getData().add(new XYChart.Data<>("Jan", -60));
-        seriesHigh.getData().add(new XYChart.Data<>("Feb", -50));
-        seriesHigh.getData().add(new XYChart.Data<>("Mar", -40));
-        seriesHigh.getData().add(new XYChart.Data<>("Apr", -30));
-        seriesHigh.getData().add(new XYChart.Data<>("May", -20));
-        seriesHigh.getData().add(new XYChart.Data<>("Jun", -10));
-        seriesHigh.getData().add(new XYChart.Data<>("Jul", 0));
-        seriesHigh.getData().add(new XYChart.Data<>("Aug", 10));
-        seriesHigh.getData().add(new XYChart.Data<>("Sep", 20));
-        seriesHigh.getData().add(new XYChart.Data<>("Oct", 40));
-        seriesHigh.getData().add(new XYChart.Data<>("Dec", 60));
+        serieslOW.setName("Low");
+        serieslOW.getData().add(new XYChart.Data<>("Jan", 60));
+        serieslOW.getData().add(new XYChart.Data<>("Feb", 50));
+        serieslOW.getData().add(new XYChart.Data<>("Mar", 40));
+        serieslOW.getData().add(new XYChart.Data<>("Apr", 30));
+        serieslOW.getData().add(new XYChart.Data<>("May", 20));
+        serieslOW.getData().add(new XYChart.Data<>("Jun", 10));
+        serieslOW.getData().add(new XYChart.Data<>("Aug", -10));
+        serieslOW.getData().add(new XYChart.Data<>("Sep", -20));
+        serieslOW.getData().add(new XYChart.Data<>("Oct", -40));
+        serieslOW.getData().add(new XYChart.Data<>("Dec", -60));
+
+        chartline.getData().addAll(seriesHigh, serieslOW);
     }
 }
