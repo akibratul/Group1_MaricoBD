@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.UpdateInventory1Controller">
+
+    <!-- Header Label -->
+    <Label layoutX="310.0" layoutY="14.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Product List Dashboard" />
+
+    <!-- Product Table -->
+    <TableView fx:id="productTable" layoutX="30.0" layoutY="64.0" prefHeight="406.0" prefWidth="502.0">
+        <columns>
+            <TableColumn fx:id="categoryColumn" prefWidth="115.19997596740723" text="Category" />
+            <TableColumn fx:id="brandColumn" prefWidth="124.79995727539062" text="Brand Name" />
+            <TableColumn fx:id="priceColumn" prefWidth="123.20001220703125" text="Price" />
+            <TableColumn fx:id="quantityColumn" prefWidth="135.20004272460938" text="Quantity" />
+        </columns>
+    </TableView>
+
+    <!-- Summary Section -->
+    <VBox layoutX="600.0" layoutY="70.0" prefWidth="270.0" spacing="10.0">
+        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Inventory Summary" />
+        <Label fx:id="totalProductsLabel" text="Total Products: 0" />
+        <Label fx:id="lowStockLabel" text="Low Stock Products: 0" />
+        <Label fx:id="outOfStockLabel" text="Out of Stock Products: 0" />
+        <Label fx:id="zeroStockLabel" text="Zero Stock Products: 0" />
+        <Label fx:id="mostStockLabel" text="Most Stock Product: -" />
+    </VBox>
+   <Button fx:id="handleLowStock" layoutX="30.0" layoutY="501.0" mnemonicParsing="false" onAction="#lowStockProductOnAction" text="Low Stock Products" />
+   <Button layoutX="176.0" layoutY="501.0" mnemonicParsing="false" onAction="#outOfStockProductOnAction" text="Out Of Stock Products" />
+   <TextField fx:id="enterRestockQuantityTF" layoutX="346.0" layoutY="501.0" onAction="#enterRestockQuantityTF" prefHeight="26.0" prefWidth="159.0" promptText="Enter Restock Quantity" />
+   <Button defaultButton="true" layoutX="661.0" layoutY="341.0" mnemonicParsing="false" onAction="#saveChangeTF" prefHeight="42.0" prefWidth="105.0" text="Save Changes">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font>
+   </Button>
+   <Button layoutX="760.0" layoutY="527.0" mnemonicParsing="false" onAction="#logoutoNaction" prefHeight="42.0" prefWidth="71.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#fffafa">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Button>
+   <Button layoutX="524.0" layoutY="496.0" mnemonicParsing="false" onAction="#UpdateStockOnAction" prefHeight="35.0" prefWidth="106.0" text="Update Stock" />
+   <Button defaultButton="true" layoutX="30.0" layoutY="10.0" mnemonicParsing="false" onAction="#backonAction" prefHeight="35.0" prefWidth="63.0" text="Back">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+
+</AnchorPane>

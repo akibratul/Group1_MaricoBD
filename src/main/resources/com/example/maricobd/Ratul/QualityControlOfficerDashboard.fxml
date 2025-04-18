@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="440.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QualityControlOfficerDashboard">
+<AnchorPane prefHeight="440.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QualityControlOfficerDashboardController">
    <children>
       <Label layoutX="156.0" layoutY="41.0" text="Quality Control Officer Dashboard" textFill="#6b4213">
          <font>

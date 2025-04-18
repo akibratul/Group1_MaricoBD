@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class QualityControlOfficerDashboard {
+public class QualityControlOfficerDashboardController {
     @javafx.fxml.FXML
     public void logOutButtonOnAction(ActionEvent actionEvent)  throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("login.fxml"));
