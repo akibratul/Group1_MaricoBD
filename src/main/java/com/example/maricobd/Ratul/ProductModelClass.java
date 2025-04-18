@@ -2,13 +2,13 @@ package com.example.maricobd.Ratul;
 
 import javafx.beans.property.*;
 
-public class Product {
+public class ProductModelClass {
     private final StringProperty category;
     private final StringProperty brand;
     private final DoubleProperty price;
     private final IntegerProperty quantity;
 
-    public Product(String category, String brand, double price, int quantity) {
+    public ProductModelClass(String category, String brand, double price, int quantity) {
         this.category = new SimpleStringProperty(category);
         this.brand = new SimpleStringProperty(brand);
         this.price = new SimpleDoubleProperty(price);

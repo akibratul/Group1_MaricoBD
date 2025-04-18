@@ -20,12 +20,12 @@ public class StorageSafetyCheckupController8 {
     @FXML private ComboBox<String> warehouseCB;
     @FXML private TextField temperatureTF;
     @FXML private TextField expiryDateTF;
-    @FXML private TableView<CheckupData> complianceTable;
-    @FXML private TableColumn<CheckupData, String> warehouseClmn;
-    @FXML private TableColumn<CheckupData, String> temperatureClmn;
-    @FXML private TableColumn<CheckupData, String> expiryClmn;
+    @FXML private TableView<CheckupDataModelClass> complianceTable;
+    @FXML private TableColumn<CheckupDataModelClass, String> warehouseClmn;
+    @FXML private TableColumn<CheckupDataModelClass, String> temperatureClmn;
+    @FXML private TableColumn<CheckupDataModelClass, String> expiryClmn;
 
-    private final ObservableList<CheckupData> dataList = FXCollections.observableArrayList();
+    private final ObservableList<CheckupDataModelClass> dataList = FXCollections.observableArrayList();
 
     @FXML
     public void initialize() {
@@ -49,7 +49,7 @@ public class StorageSafetyCheckupController8 {
             return;
         }
 
-        dataList.add(new CheckupData(warehouse, temp, expiry));
+        dataList.add(new CheckupDataModelClass(warehouse, temp, expiry));
 
         warehouseCB.getSelectionModel().clearSelection();
         temperatureTF.clear();

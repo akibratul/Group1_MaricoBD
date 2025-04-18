@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QproductInspectionController1">
+    <children>
+        <Label layoutX="220.0" layoutY="20.0" text="Product Inspection">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="60.0" layoutY="80.0" text="Product:" />
+        <ComboBox fx:id="productCB" layoutX="150.0" layoutY="75.0" prefWidth="200.0" promptText="Select Product" />
+
+        <Label layoutX="60.0" layoutY="130.0" text="Defects:" />
+        <TextField fx:id="defectsTF" layoutX="150.0" layoutY="125.0" prefWidth="300.0" />
+
+        <Label layoutX="60.0" layoutY="180.0" text="Quality Rating:" />
+        <TextField fx:id="ratingTF" layoutX="150.0" layoutY="175.0" prefWidth="300.0" />
+
+        <Button fx:id="saveButton" defaultButton="true" layoutX="150.0" layoutY="216.0" onAction="#saveInspectionOnAction" prefWidth="150.0" text="Save Inspection" />
+        <Button layoutX="506.0" layoutY="542.0" onAction="#logoutOnAction" prefHeight="35.0" prefWidth="96.0" text="Logout" />
+
+        <Label fx:id="statusLabel" layoutX="150.0" layoutY="270.0" textFill="green" />
+
+        <TableView fx:id="inspectionTable" layoutX="60.0" layoutY="270.0" prefHeight="250.0" prefWidth="530.0">
+            <columns>
+                <TableColumn fx:id="productCol" prefWidth="150.0" text="Product" />
+                <TableColumn fx:id="defectsCol" prefWidth="200.0" text="Defects" />
+                <TableColumn fx:id="ratingCol" prefWidth="180.0" text="Quality Rating" />
+            </columns>
+        </TableView>
+      <Button fx:id="backonAction" defaultButton="true" layoutX="54.0" layoutY="24.0" mnemonicParsing="false" onAction="#backonAction" prefHeight="26.0" prefWidth="53.0" text="Back" />
+    </children>
+</AnchorPane>

@@ -15,42 +15,42 @@
       </Label>
       <Line endX="6.5999755859375" endY="250.0" layoutX="341.0" layoutY="111.0" startX="6.5999755859375" startY="-18.800003051757812" stroke="#307372" />
       <Line endX="55.4000244140625" endY="198.0" layoutX="281.0" layoutY="162.0" startX="55.4000244140625" startY="-70.80000305175781" stroke="#157d77" />
-      <Button defaultButton="true" layoutX="90.0" layoutY="107.0" mnemonicParsing="false" text=" Product Inspection">
+      <Button defaultButton="true" layoutX="90.0" layoutY="107.0" mnemonicParsing="false" onAction="#productInspctionOnAction" text=" Product Inspection">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="46.0" layoutY="172.0" mnemonicParsing="false" text=" Monitor Production Processes">
+      <Button defaultButton="true" layoutX="46.0" layoutY="172.0" mnemonicParsing="false" onAction="#MonitorProdProOnAction" text=" Monitor Production Processes">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="33.0" layoutY="312.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="292.0" text="Manage Non-Conforming Products">
+      <Button defaultButton="true" layoutX="33.0" layoutY="312.0" mnemonicParsing="false" onAction="#nonConformingPdOnAction" prefHeight="40.0" prefWidth="292.0" text="Manage Non-Conforming Products">
          <font>
             <Font size="17.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="393.0" layoutY="107.0" mnemonicParsing="false" text="Evaluate Supplier Performance">
+      <Button defaultButton="true" layoutX="393.0" layoutY="107.0" mnemonicParsing="false" onAction="#evSupplierPfOnAction" text="Evaluate Supplier Performance">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="78.0" layoutY="247.0" mnemonicParsing="false" text="Test Finished Products">
+      <Button defaultButton="true" layoutX="78.0" layoutY="247.0" mnemonicParsing="false" onAction="#testFinishedProductOnAction" text="Test Finished Products">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="387.0" layoutY="172.0" mnemonicParsing="false" text=" Conduct Internal Quality Audits">
+      <Button defaultButton="true" layoutX="387.0" layoutY="172.0" mnemonicParsing="false" onAction="#coIntQauditOnAction" text=" Conduct Internal Quality Audits">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="369.0" layoutY="247.0" mnemonicParsing="false" text=" Environmental &amp; Safety Compliance">
+      <Button defaultButton="true" layoutX="369.0" layoutY="247.0" mnemonicParsing="false" onAction="#evSafetyOnAction" text=" Environmental &amp; Safety Compliance">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="382.0" layoutY="312.0" mnemonicParsing="false" text="Generate Quality Control Reports">
+      <Button defaultButton="true" layoutX="382.0" layoutY="312.0" mnemonicParsing="false" onAction="#gnQeportsOnAction" text="Generate Quality Control Reports">
          <font>
             <Font size="18.0" />
          </font>

@@ -17,19 +17,19 @@ import java.io.IOException;
 public class UpdateInventory1Controller {
 
     @FXML
-    private TableView<Product> productTable;
+    private TableView<ProductModelClass> productTable;
 
     @FXML
-    private TableColumn<Product, String> categoryColumn;
+    private TableColumn<ProductModelClass, String> categoryColumn;
 
     @FXML
-    private TableColumn<Product, String> brandColumn;
+    private TableColumn<ProductModelClass, String> brandColumn;
 
     @FXML
-    private TableColumn<Product, Double> priceColumn;
+    private TableColumn<ProductModelClass, Double> priceColumn;
 
     @FXML
-    private TableColumn<Product, Integer> quantityColumn;
+    private TableColumn<ProductModelClass, Integer> quantityColumn;
 
     @FXML
     private Label totalProductsLabel;
@@ -47,7 +47,7 @@ public class UpdateInventory1Controller {
     private Label mostStockLabel;
 
     // Sample data
-    private ObservableList<Product> products = FXCollections.observableArrayList();
+    private ObservableList<ProductModelClass> products = FXCollections.observableArrayList();
     @FXML
     private TextField enterRestockQuantityTF;
     @FXML
@@ -65,16 +65,16 @@ public class UpdateInventory1Controller {
     }
 
     private void loadProducts() {
-        products.add(new Product(" Hair Care", "Parachute Coconut Oil", 155.0, 10000));
-        products.add(new Product("Hair Care", "Parachute Advansed ", 150.0, 50000));
-        products.add(new Product("Hair Care", "Nihar Naturals", 100.0, 0));
-        products.add(new Product("Hair Care", "RED King Men’s Cooling Oil", 200.0, 40000));
-        products.add(new Product("Hair Care", "Livon", 180.0, 30000));
-        products.add(new Product("Skin Care", "Parachute SkinPure", .0, 50));
-        products.add(new Product("Skin Care", "Glo-On ", 90.0, 0));
-        products.add(new Product("Male Grooming", "Studio X", 100.0, 9000));
-        products.add(new Product("Baby Care", "Parachute Just for Baby", 300.0, 0));
-        products.add(new Product("Foods", "Saffola", 500.0, 8000));
+        products.add(new ProductModelClass(" Hair Care", "Parachute Coconut Oil", 155.0, 10000));
+        products.add(new ProductModelClass("Hair Care", "Parachute Advansed ", 150.0, 50000));
+        products.add(new ProductModelClass("Hair Care", "Nihar Naturals", 100.0, 0));
+        products.add(new ProductModelClass("Hair Care", "RED King Men’s Cooling Oil", 200.0, 40000));
+        products.add(new ProductModelClass("Hair Care", "Livon", 180.0, 30000));
+        products.add(new ProductModelClass("Skin Care", "Parachute SkinPure", .0, 50));
+        products.add(new ProductModelClass("Skin Care", "Glo-On ", 90.0, 0));
+        products.add(new ProductModelClass("Male Grooming", "Studio X", 100.0, 9000));
+        products.add(new ProductModelClass("Baby Care", "Parachute Just for Baby", 300.0, 0));
+        products.add(new ProductModelClass("Foods", "Saffola", 500.0, 8000));
         productTable.setItems(products);
     }
 
@@ -84,7 +84,7 @@ public class UpdateInventory1Controller {
         long lowStock = products.stream().filter(p -> p.getQuantity() < 10 && p.getQuantity() > 0).count();
         long outOfStock = products.stream().filter(p -> p.getQuantity() == 0).count();
         long zeroStock = outOfStock; // same in this case
-        Product mostStock = products.stream().max((a, b) -> a.getQuantity() - b.getQuantity()).orElse(null);
+        ProductModelClass mostStock = products.stream().max((a, b) -> a.getQuantity() - b.getQuantity()).orElse(null);
 
         totalProductsLabel.setText("Total: " + total);
         lowStockLabel.setText("Low: " + lowStock);
@@ -118,13 +118,13 @@ public class UpdateInventory1Controller {
 
     @FXML
     public void outOfStockProductOnAction(ActionEvent actionEvent) {
-        ObservableList<Product> filtered = products.filtered(p -> p.getQuantity() == 0);
+        ObservableList<ProductModelClass> filtered = products.filtered(p -> p.getQuantity() == 0);
         productTable.setItems(filtered);
     }
 
     @FXML
     public void lowStockProductOnAction(ActionEvent actionEvent) {
-        ObservableList<Product> filtered = products.filtered(p -> p.getQuantity() < 10 && p.getQuantity() > 0);
+        ObservableList<ProductModelClass> filtered = products.filtered(p -> p.getQuantity() < 10 && p.getQuantity() > 0);
         productTable.setItems(filtered);
     }
 
@@ -134,7 +134,7 @@ public class UpdateInventory1Controller {
 
     @FXML
     public void UpdateStockOnAction(ActionEvent actionEvent) {
-        Product selected = productTable.getSelectionModel().getSelectedItem();
+        ProductModelClass selected = productTable.getSelectionModel().getSelectedItem();
         if (selected != null) {
             try {
                 int addQty = Integer.parseInt(enterRestockQuantityTF.getText().trim());

@@ -3,13 +3,13 @@ package com.example.maricobd.Ratul;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class CheckupData {
+public class CheckupDataModelClass {
 
     private final StringProperty warehouse;
     private final StringProperty temperature;
     private final StringProperty expiry;
 
-    public CheckupData(String warehouse, String temperature, String expiry) {
+    public CheckupDataModelClass(String warehouse, String temperature, String expiry) {
         this.warehouse = new SimpleStringProperty(warehouse);
         this.temperature = new SimpleStringProperty(temperature);
         this.expiry = new SimpleStringProperty(expiry);
