@@ -50,6 +50,8 @@ public class UpdateInventory1Controller {
     private ObservableList<Product> products = FXCollections.observableArrayList();
     @FXML
     private TextField enterRestockQuantityTF;
+    @FXML
+    private Button handleLowStock;
 
 
     public void initialize() {

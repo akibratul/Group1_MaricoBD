@@ -20,7 +20,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="44.0" layoutY="172.0" mnemonicParsing="false" text="Track Stock Movements">
+      <Button defaultButton="true" layoutX="44.0" layoutY="172.0" mnemonicParsing="false" onAction="#trackStockMovements" text="Track Stock Movements">
          <font>
             <Font size="18.0" />
          </font>
@@ -35,7 +35,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="73.0" layoutY="247.0" mnemonicParsing="false" text="Inventory Audits">
+      <Button defaultButton="true" layoutX="73.0" layoutY="247.0" mnemonicParsing="false" onAction="#inventoryAuditsOnAction" text="Inventory Audits">
          <font>
             <Font size="18.0" />
          </font>

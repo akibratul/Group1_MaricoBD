@@ -10,8 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class InventoryCoordinatorDashboardController
-{
+public class InventoryCoordinatorDashboardController {
     @javafx.fxml.FXML
     public void initialize() {
     }
@@ -30,6 +29,26 @@ public class InventoryCoordinatorDashboardController
     @javafx.fxml.FXML
     public void updateInventoryOnAction(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("UpdateInventory1.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+
+        @javafx.fxml.FXML
+        public void trackStockMovements (ActionEvent actionEvent) throws IOException {
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TrackStockMovements2.fxml")));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+
+        }
+
+    @javafx.fxml.FXML
+    public void inventoryAuditsOnAction(ActionEvent actionEvent) throws IOException{
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("InventoryAudits3.fxml")));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);

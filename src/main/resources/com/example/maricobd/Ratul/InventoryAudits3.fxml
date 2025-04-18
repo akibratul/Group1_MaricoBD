@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="542.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.InventoryAudits3Controller">
+   <children>
+      <Label layoutX="185.0" layoutY="21.0" text=" Inventory Audits">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="108.0" text="Department" />
+      <Label layoutX="19.0" layoutY="147.0" text="Product Category" />
+      <Label layoutX="75.0" layoutY="191.0" text="Quality Data" />
+      <ComboBox fx:id="departmentCB" layoutX="123.0" layoutY="104.0" prefWidth="150.0" promptText="Select Department" />
+      <ComboBox fx:id="categoryCB" layoutX="123.0" layoutY="143.0" prefWidth="150.0" promptText="Select Category" />
+      <Label layoutX="74.0" layoutY="302.0" text="Non-Conformities:" />
+      <Label layoutX="76.0" layoutY="365.0" text="Corrective Actions" />
+      <Button defaultButton="true" layoutX="258.0" layoutY="433.0" mnemonicParsing="false" onAction="#resolveIssueOnAction" prefHeight="36.0" prefWidth="97.0" text="Resolve Issue" />
+      <Button layoutX="514.0" layoutY="469.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="36.0" prefWidth="54.0" text="Logout" />
+      <Button defaultButton="true" layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onAction="#backonAction" text="Back" />
+      <TextArea fx:id="qualityDataTA" layoutX="75.0" layoutY="214.0" prefHeight="83.0" prefWidth="495.0" />
+      <TextField fx:id="nonConformitiesTF" layoutX="77.0" layoutY="329.0" prefHeight="26.0" prefWidth="495.0" />
+      <TextField fx:id="correctiveActionsTF" layoutX="78.0" layoutY="394.0" prefHeight="26.0" prefWidth="475.0" />
+      <Label fx:id="statusLabel" layoutX="166.0" layoutY="481.0" prefHeight="36.0" prefWidth="299.0" />
+   </children>
+</AnchorPane>
