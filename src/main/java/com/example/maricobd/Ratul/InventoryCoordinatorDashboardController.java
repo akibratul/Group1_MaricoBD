@@ -54,4 +54,13 @@ public class InventoryCoordinatorDashboardController {
         stage.setScene(scene);
         stage.show();
     }
+
+    @javafx.fxml.FXML
+    public void supplierOnAction(ActionEvent actionEvent) throws IOException{
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("CordinateWithSuppliers4.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 }

@@ -35,11 +35,10 @@ public class InventoryAudits3Controller {
 
     @FXML
     public void initialize() {
-        // Populate department and category dropdowns
+
         departmentCB.setItems(FXCollections.observableArrayList("Warehouse", "Production", "Logistics"));
         categoryCB.setItems(FXCollections.observableArrayList("Beverage", "Snacks", "Oil", "Personal Care"));
 
-        // Optional: Load data when both selected
         departmentCB.setOnAction(event -> loadQualityData());
         categoryCB.setOnAction(event -> loadQualityData());
     }
@@ -49,7 +48,6 @@ public class InventoryAudits3Controller {
         String cat = categoryCB.getValue();
 
         if (dept != null && cat != null) {
-            // Display sample quality data — you can load from DB here
             qualityDataTA.setText("Audit Report for " + dept + " - " + cat + ":\n"
                     + "- Stock matched: Yes\n"
                     + "- Damaged items: 2\n"
@@ -66,11 +64,8 @@ public class InventoryAudits3Controller {
             showAlert("Please fill in both Non-Conformities and Corrective Actions.");
             return;
         }
-
-        // Simulate resolving issues (you can store to DB here)
         statusLabel.setText("Audit issues resolved successfully.");
 
-        // Clear input fields
         nonConformitiesTF.clear();
         correctiveActionsTF.clear();
     }
