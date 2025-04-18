@@ -37,7 +37,7 @@ public class InventoryAudits3Controller {
     public void initialize() {
 
         departmentCB.setItems(FXCollections.observableArrayList("Warehouse", "Production", "Logistics"));
-        categoryCB.setItems(FXCollections.observableArrayList("Beverage", "Snacks", "Oil", "Personal Care"));
+        categoryCB.setItems(FXCollections.observableArrayList("Hair Care", "Skin Care", "Baby Care", "Health & Hygiene", "Foods"));
 
         departmentCB.setOnAction(event -> loadQualityData());
         categoryCB.setOnAction(event -> loadQualityData());
