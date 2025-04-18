@@ -7,17 +7,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="562.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.MarketingAnal.ProductPerformance">
    <children>
       <Label layoutX="236.0" layoutY="14.0" text="Product Performance" />
-      <ComboBox layoutX="86.0" layoutY="72.0" prefWidth="150.0" promptText="ComboBox will have profit margin and customer satisfaction. Selecting each will show best selling products profit margin and customer satisfaction score" />
-      <BarChart layoutX="86.0" layoutY="108.0">
+      <ComboBox fx:id="metricBox" layoutX="86.0" layoutY="72.0" prefWidth="150.0" promptText="ComboBox will have profit margin and customer satisfaction. Selecting each will show best selling products profit margin and customer satisfaction score" />
+      <BarChart fx:id="barChart" layoutX="86.0" layoutY="108.0">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <CategoryAxis fx:id="productName" side="BOTTOM" />
         </xAxis>
         <yAxis>
-          <NumberAxis side="LEFT" />
+          <NumberAxis fx:id="score" side="LEFT" />
         </yAxis>
       </BarChart>
    </children>

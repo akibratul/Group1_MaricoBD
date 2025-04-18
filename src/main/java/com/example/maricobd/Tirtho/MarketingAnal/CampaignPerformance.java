@@ -22,7 +22,7 @@ public class CampaignPerformance implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         XYChart.Series<String, Integer> seriesHigh = new XYChart.Series<>();
-        seriesHigh.setName("High");
+        seriesHigh.setName("Net Revenue");
         seriesHigh.getData().add(new XYChart.Data<>("Jan", -60));
         seriesHigh.getData().add(new XYChart.Data<>("Feb", -50));
         seriesHigh.getData().add(new XYChart.Data<>("Mar", -40));
@@ -36,17 +36,9 @@ public class CampaignPerformance implements Initializable {
         seriesHigh.getData().add(new XYChart.Data<>("Dec", 60));
 
         XYChart.Series<String, Integer> serieslOW = new XYChart.Series<>();
-        serieslOW.setName("Low");
-        serieslOW.getData().add(new XYChart.Data<>("Jan", 60));
-        serieslOW.getData().add(new XYChart.Data<>("Feb", 50));
-        serieslOW.getData().add(new XYChart.Data<>("Mar", 40));
-        serieslOW.getData().add(new XYChart.Data<>("Apr", 30));
-        serieslOW.getData().add(new XYChart.Data<>("May", 20));
-        serieslOW.getData().add(new XYChart.Data<>("Jun", 10));
-        serieslOW.getData().add(new XYChart.Data<>("Aug", -10));
-        serieslOW.getData().add(new XYChart.Data<>("Sep", -20));
-        serieslOW.getData().add(new XYChart.Data<>("Oct", -40));
-        serieslOW.getData().add(new XYChart.Data<>("Dec", -60));
+        serieslOW.setName("Break Even Point");
+        serieslOW.getData().add(new XYChart.Data<>("Jul", 0));
+
 
         chartline.getData().addAll(seriesHigh, serieslOW);
     }
