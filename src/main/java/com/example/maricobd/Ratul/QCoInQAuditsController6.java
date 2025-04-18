@@ -40,11 +40,11 @@ public class QCoInQAuditsController6 {
                 return;
             }
 
-            // Simulated validation
+
             statusLabel.setText("Audit findings validated successfully.");
             statusLabel.setStyle("-fx-text-fill: green;");
 
-            // Clear fields
+
             processTF.clear();
             documentationTF.clear();
             safetyTF.clear();
