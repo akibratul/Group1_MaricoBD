@@ -3,14 +3,20 @@ package com.example.maricobd.Tirtho.FinancialExec;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.*;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
+import javafx.event.ActionEvent;
+import javafx.scene.Node;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
+import java.util.Objects;
 
 public class CompetitorBenchmarking {
     @FXML
@@ -37,6 +43,8 @@ public class CompetitorBenchmarking {
     private final String[] companies = {
             "Marico", "Unilever", "Johnson & Johnson", "Abul Khair", "Hamdard"
     };
+    @FXML
+    private Button backButton;
 
     @FXML
     public void initialize() {
@@ -116,4 +124,15 @@ public class CompetitorBenchmarking {
 
         alert.showAndWait();
     }
-}
+
+    @FXML
+    public void onBackButtonClick(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("com.example.maricobd.Tirtho.FinancialExec.FinancialExecDashboard.fxml")));
+            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+        } catch (Exception e) {
+            e.printStackTrace();
+
+    }}}
+

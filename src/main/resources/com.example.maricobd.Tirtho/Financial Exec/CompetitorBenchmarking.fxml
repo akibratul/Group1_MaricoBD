@@ -16,7 +16,7 @@
       <Label layoutX="70.0" layoutY="85.0" text="Metric" />
       <TextArea fx:id="TextArea" layoutX="146.0" layoutY="603.0" prefHeight="200.0" prefWidth="864.0" promptText="Insight and Recomendations" />
       <Button fx:id="ExportButton" layoutX="508.0" layoutY="845.0" mnemonicParsing="false" onAction="#onActionButtonClick" text="Export Report" />
-      <Button layoutX="607.0" layoutY="845.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="backButton" layoutX="607.0" layoutY="845.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
       <PieChart fx:id="pieChart" layoutX="696.0" layoutY="129.0" />
       <Label layoutX="537.0" layoutY="14.0" text="Competitor Bechmarks" />
       <Label layoutX="859.0" layoutY="539.0" text="Market share Distribution" />
