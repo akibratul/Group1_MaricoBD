@@ -63,4 +63,22 @@ public class InventoryCoordinatorDashboardController {
         stage.setScene(scene);
         stage.show();
     }
+
+    @javafx.fxml.FXML
+    public void demandFcastOnAction(ActionEvent actionEvent) throws IOException{
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("DemandForecast5.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @javafx.fxml.FXML
+    public void stockAnaOnAction(ActionEvent actionEvent) throws IOException{
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("StockAnalysis6.fxml")));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 }

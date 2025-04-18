@@ -30,7 +30,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="369.0" layoutY="107.0" mnemonicParsing="false" text="Forecast Demand">
+      <Button defaultButton="true" layoutX="369.0" layoutY="107.0" mnemonicParsing="false" onAction="#demandFcastOnAction" text="Demand Forecast">
          <font>
             <Font size="18.0" />
          </font>
@@ -40,7 +40,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button defaultButton="true" layoutX="347.0" layoutY="172.0" mnemonicParsing="false" text="Fix Stock Discrepancies">
+      <Button defaultButton="true" layoutX="382.0" layoutY="172.0" mnemonicParsing="false" onAction="#stockAnaOnAction" text="Stock Analysis">
          <font>
             <Font size="18.0" />
          </font>
