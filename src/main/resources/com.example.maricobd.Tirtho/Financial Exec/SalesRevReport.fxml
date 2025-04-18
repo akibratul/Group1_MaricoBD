@@ -10,7 +10,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1881.0" prefWidth="1583.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.SalesRevReport">
    <children>
       <Label layoutX="37.0" layoutY="31.0" text="To" />
@@ -42,5 +41,6 @@
       <Label layoutX="51.0" layoutY="1144.0" text="Sales Trends Overtime" />
       <Label layoutX="31.0" layoutY="1493.0" text="Sales Trends Overtime" />
       <PieChart fx:id="pieChart1" layoutX="240.0" layoutY="1468.0" />
+      <Button fx:id="BackButton" layoutX="817.0" layoutY="1774.0" mnemonicParsing="false" onAction="#OnActionButtonClick" text="back" />
    </children>
 </AnchorPane>

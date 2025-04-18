@@ -15,11 +15,14 @@
       <Button fx:id="MonitorPricingDiscountsButton" layoutX="450.0" layoutY="246.0" mnemonicParsing="false" onAction="#onMonitorPricingDiscountsButtonClick" text="Monitor Pricing Discounts" />
       <Button fx:id="RegulatoryComplianceCheckButton" layoutX="450.0" layoutY="277.0" mnemonicParsing="false" onAction="#onRegulatoryComplianceCheckButtonClick" text="Regulatory Compliance Check" />
       <Button fx:id="CompetitorBenchmarkingButton" layoutX="450.0" layoutY="310.0" mnemonicParsing="false" onAction="#onCompetitorBenchmarkingButtonClick" text="Competitor Benchmarking" />
+      <Button fx:id="BackButton" layoutX="551.0" layoutY="891.0" mnemonicParsing="false" onAction="#OnActionButtonClick" text="Back" />
+
       <Label layoutX="135.0" layoutY="25.0" prefHeight="36.0" prefWidth="356.0" text="Financial Executive Dashboard">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
       <Button layoutX="450.0" layoutY="344.0" mnemonicParsing="false" text="Logout" />
+
    </children>
 </AnchorPane>

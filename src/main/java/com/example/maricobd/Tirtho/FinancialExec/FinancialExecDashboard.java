@@ -69,5 +69,9 @@ public class FinancialExecDashboard {
     private void onBudgetForecastingButtonClick(ActionEvent event) {
         handleNavigation(event, "/com/example/maricobd/Tirtho/FinancialExec/BudgetForecasting.fxml");
     }
+
+    public void OnActionButtonClick(ActionEvent actionEvent) {
+
+    }
 }
 

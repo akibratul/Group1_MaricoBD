@@ -4,6 +4,7 @@ package com.example.maricobd.Tirtho.MarketingAnal;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -15,6 +16,10 @@ public class CustomerSegmentation {
     @FXML private TableColumn<Customer, String> orderColm;
     @FXML private TableColumn<Customer, String> avgCartValColm;
     @FXML private TableColumn<Customer, String> lastPurColm;
+
+    public void OnActionButtonClick(ActionEvent actionEvent) {
+
+    }
 
     public static class Customer {
         private final SimpleStringProperty name;

@@ -6,8 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.ValidatePayments">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.ValidatePayments">
    <children>
       <Label prefHeight="17.0" prefWidth="298.0" text="Online Transactions" />
       <TableView fx:id="OnlineTransactionsTableView" prefHeight="200.0" prefWidth="200.0">
@@ -20,6 +19,6 @@
         </columns>
       </TableView>
       <Button fx:id="FailedTransactionCheckButton" mnemonicParsing="false" text="Check for Failed Transactions" />
-      <Button fx:id="BackButton" layoutX="10.0" layoutY="227.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="BackButton" layoutX="10.0" layoutY="227.0" mnemonicParsing="false" onAction="#onActionButtonClick" text="Back" />
    </children>
 </VBox>

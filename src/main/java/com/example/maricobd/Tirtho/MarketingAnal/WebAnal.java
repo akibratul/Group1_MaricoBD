@@ -1,6 +1,7 @@
 package com.example.maricobd.Tirtho.MarketingAnal;
 
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
@@ -97,5 +98,8 @@ public class WebAnal {
     }
 
 
+    public void OnActionButtonClick(ActionEvent actionEvent) {
+
+    }
 }
 

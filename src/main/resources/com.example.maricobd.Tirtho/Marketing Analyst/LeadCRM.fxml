@@ -20,6 +20,7 @@
       <TextField fx:id="intrestsField" layoutX="368.0" layoutY="101.0" />
       <Label layoutX="301.0" layoutY="105.0" text="Interests" />
       <Button fx:id="submitButton" layoutX="253.0" layoutY="161.0" mnemonicParsing="false" onAction="#onActionButtonClick" text="Submit" />
+      <Button fx:id="BackButton" layoutX="551.0" layoutY="891.0" mnemonicParsing="false" onAction="#OnActionButtonClick" text="Back" />
       <TableView fx:id="table" layoutX="21.0" layoutY="200.0" prefHeight="200.0" prefWidth="538.0">
         <columns>
             <TableColumn fx:id="leadNoColmn" prefWidth="75.0" text="Lead No." />

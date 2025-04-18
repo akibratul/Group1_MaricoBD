@@ -1,5 +1,6 @@
 package com.example.maricobd.Tirtho.MarketingAnal;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
@@ -41,5 +42,8 @@ public class CampaignPerformance implements Initializable {
 
 
         chartline.getData().addAll(seriesHigh, serieslOW);
+    }
+
+    public void OnActionButtonClick(ActionEvent actionEvent) {
     }
 }

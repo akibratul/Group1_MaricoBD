@@ -21,6 +21,8 @@
         </columns>
       </TableView>
       <Label layoutX="24.0" layoutY="157.0" text="Revenue Breakdown" />
-      <Button layoutX="140.0" layoutY="113.0" mnemonicParsing="false" text="Show" />
+       <Button fx:id="BackButton" layoutX="551.0" layoutY="891.0" mnemonicParsing="false" onAction="#OnActionButtonClick" text="Back" />
+
+       <Button layoutX="140.0" layoutY="113.0" mnemonicParsing="false" text="Show" />
    </children>
 </AnchorPane>
