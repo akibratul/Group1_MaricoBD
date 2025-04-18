@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1272.0" prefWidth="1247.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.CompetitorBenchmarking">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="884.0" prefWidth="1247.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.CompetitorBenchmarking">
    <children>
-      <ComboBox layoutX="106.0" layoutY="63.0" prefWidth="150.0" />
-      <Label layoutX="34.0" layoutY="67.0" text="Competitor" />
-      <Button layoutX="129.0" layoutY="103.0" mnemonicParsing="false" text="Compare" />
-      <TableView layoutX="129.0" layoutY="149.0" prefHeight="200.0" prefWidth="235.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Metric" />
-          <TableColumn prefWidth="75.0" text="Marico" />
-            <TableColumn prefWidth="75.0" text="Competitor" />
-        </columns>
-      </TableView>
-      <LineChart layoutX="34.0" layoutY="357.0">
+      <ComboBox fx:id="metricBox" layoutX="142.0" layoutY="81.0" prefWidth="150.0" />
+      <Label layoutX="70.0" layoutY="85.0" text="Metric" />
+      <TextArea fx:id="TextArea" layoutX="146.0" layoutY="603.0" prefHeight="200.0" prefWidth="864.0" promptText="Insight and Recomendations" />
+      <Button fx:id="ExportButton" layoutX="508.0" layoutY="845.0" mnemonicParsing="false" onAction="#onActionButtonClick" text="Export Report" />
+      <Button fx:id="backButton" layoutX="607.0" layoutY="845.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+      <PieChart fx:id="pieChart" layoutX="696.0" layoutY="129.0" />
+      <Label layoutX="537.0" layoutY="14.0" text="Competitor Bechmarks" />
+      <Label layoutX="859.0" layoutY="539.0" text="Market share Distribution" />
+      <BarChart fx:id="barChart" layoutX="124.0" layoutY="129.0">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
         </xAxis>
         <yAxis>
-          <NumberAxis side="LEFT" />
+          <NumberAxis fx:id="yAxis" side="LEFT" />
         </yAxis>
-      </LineChart>
-      <TextArea layoutX="81.0" layoutY="841.0" prefHeight="200.0" prefWidth="200.0" promptText="Insight and Recomendations" />
-      <Button layoutX="312.0" layoutY="1068.0" mnemonicParsing="false" text="Export Report" />
-      <Button layoutX="411.0" layoutY="1068.0" mnemonicParsing="false" text="Back" />
+      </BarChart>
    </children>
 </AnchorPane>

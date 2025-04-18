@@ -4,41 +4,31 @@
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="741.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="805.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Tirtho.FinancialExec.BudgetForecast">
    <children>
-      <Label layoutX="10.0" layoutY="10.0" text="Budget &amp; Forecasting" />
-      <ComboBox fx:id="DeptCombo" layoutX="10.0" layoutY="10.0" prefWidth="150.0" promptText="Select Department" />
-      <DatePicker layoutX="14.0" layoutY="50.0" promptText="Forecast Start Date" />
-      <DatePicker layoutX="14.0" layoutY="83.0" promptText="Forecast End Date" />
-      <Button fx:id="AnalyzeButton" layoutX="39.0" layoutY="122.0" mnemonicParsing="false" text="Analyze" />
-      <LineChart layoutX="60.0" layoutY="171.0">
+      <Label layoutX="229.0" layoutY="14.0" text="Budget &amp; Forecasting" />
+      <LineChart fx:id="linechart" layoutX="56.0" layoutY="71.0">
          <xAxis>
-            <CategoryAxis side="BOTTOM" />
+            <CategoryAxis side="BOTTOM" fx:id="xAxis" />
          </xAxis>
          <yAxis>
-            <NumberAxis side="LEFT" />
+            <NumberAxis fx:id="yAxis" side="LEFT" />
          </yAxis>
       </LineChart>
-      <Label layoutX="275.0" layoutY="571.0" text="Revenue Projection" />
-      <Label layoutX="17.0" layoutY="634.0" text="Reccomend Budget Allocation- " />
-      <TextField layoutX="327.0" layoutY="630.0" />
-      <Button layoutX="512.0" layoutY="630.0" mnemonicParsing="false" text="Set" />
-      <Label layoutX="235.0" layoutY="634.0" prefHeight="17.0" prefWidth="52.0" text="IT" />
-      <TextField layoutX="327.0" layoutY="663.0" />
-      <Button layoutX="512.0" layoutY="663.0" mnemonicParsing="false" text="Set" />
-      <Label layoutX="235.0" layoutY="667.0" prefHeight="17.0" prefWidth="52.0" text="Sales" />
-      <TextField layoutX="327.0" layoutY="688.0" />
-      <Button layoutX="512.0" layoutY="688.0" mnemonicParsing="false" text="Set" />
-      <Label layoutX="235.0" layoutY="692.0" prefHeight="17.0" prefWidth="52.0" text="PR" />
-      <TextField layoutX="327.0" layoutY="715.0" />
-      <Button layoutX="512.0" layoutY="715.0" mnemonicParsing="false" text="Set" />
-      <Label layoutX="235.0" layoutY="719.0" prefHeight="17.0" prefWidth="52.0" text="marketing" />
+      <Label layoutX="220.0" layoutY="471.0" text="Revenue Projection for 2024 and 2025" />
+      <Label layoutX="61.0" layoutY="539.0" text="Reccomend Budget Allocation- " />
+      <TextField fx:id="itTextField" layoutX="321.0" layoutY="588.0" />
+      <Label layoutX="229.0" layoutY="592.0" prefHeight="17.0" prefWidth="52.0" text="IT" />
+      <TextField fx:id="salesTextField" layoutX="321.0" layoutY="621.0" />
+      <Label layoutX="229.0" layoutY="625.0" prefHeight="17.0" prefWidth="52.0" text="Sales" />
+      <TextField fx:id="RDTextField" layoutX="321.0" layoutY="646.0" />
+      <Label layoutX="229.0" layoutY="650.0" prefHeight="17.0" prefWidth="52.0" text="R&amp;D" />
+      <TextField fx:id="marketingTextField" layoutX="321.0" layoutY="673.0" />
+      <Button fx:id="setButton" layoutX="348.0" layoutY="714.0" mnemonicParsing="false" onAction="#onActionButtonClick" text="Set" />
+      <Label layoutX="229.0" layoutY="677.0" prefHeight="17.0" prefWidth="52.0" text="marketing" />
    </children>
 </AnchorPane>
