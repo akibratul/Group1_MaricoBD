@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 import javafx.event.ActionEvent;
 import java.io.IOException;
+import java.util.EventObject;
 
 public class LoginController {
 
@@ -22,6 +23,7 @@ public class LoginController {
     public void onMarketingButtonClick(ActionEvent actionEvent)throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com.example.maricobd.Tirtho/Marketing Analyst/MarketingAnalystDashboard.fxml"));
         Scene scene = new Scene(loader.load());
+        EventObject event = null;
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.setTitle("Marketing Analyst Dashboard");
@@ -32,6 +34,7 @@ public class LoginController {
     public void onFinancialButtonClick(ActionEvent actionEvent) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com.example.maricobd.Tirtho/Financial Exec/FinancialExecDashboard.fxml"));
         Scene scene = new Scene(loader.load());
+        EventObject event = null;
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.setTitle("Financial Executive Dashboard");
