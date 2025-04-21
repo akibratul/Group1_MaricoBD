@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class UpdateInventory1Controller {
+public class UpdateInventoryController1 {
 
     @FXML
     private TableView<ProductModelClass> productTable;
@@ -51,7 +51,6 @@ public class UpdateInventory1Controller {
     @FXML
     private TextField enterRestockQuantityTF;
     @FXML
-    private Button handleLowStock;
 
 
     public void initialize() {

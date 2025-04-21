@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class InventoryAudits3Controller {
+public class InventoryAuditsController3 {
 
     @FXML
     private ComboBox<String> departmentCB;

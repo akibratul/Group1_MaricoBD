@@ -4,8 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.maricobd.Ratul.QGeNQuCReportsController8">
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QGeNQuCReportsController8">
 
     <Label layoutX="165.0" layoutY="24.0" style="-fx-font-size: 16px; -fx-font-weight: bold" text="Generate Quality Control Report" />
 
@@ -21,7 +22,10 @@
     <Button defaultButton="true" layoutX="355.0" layoutY="318.0" onAction="#validateReportOnAction" prefHeight="26.0" prefWidth="73.0" text="Validate" />
     <Button defaultButton="true" layoutX="230.0" layoutY="318.0" onAction="#generateReportOnAction" prefHeight="26.0" prefWidth="74.0" text="Generate" />
     <Button defaultButton="true" layoutX="37.0" layoutY="24.0" onAction="#backonAction" prefHeight="26.0" prefWidth="50.0" text="Back" />
-    <Button layoutX="499.0" layoutY="331.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" text="Logout" />
+    <Button layoutX="499.0" layoutY="331.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#f2f2f2">
+      <font>
+         <Font name="System Bold" size="13.0" />
+      </font></Button>
    <Label layoutX="141.0" layoutY="79.0" text="Raw Material :" />
    <Label layoutX="146.0" layoutY="120.0" text="Production :" />
    <Label layoutX="118.0" layoutY="156.0" text="Finished Product :" />

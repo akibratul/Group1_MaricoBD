@@ -6,11 +6,15 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="498.0" prefWidth="601.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.maricobd.Ratul.QProductTestingController3">
+<AnchorPane prefHeight="498.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QProductTestingController3">
 
     <children>
-        <Label layoutX="200" layoutY="20" style="-fx-font-size: 18;" text="Finished Product Testing" />
+        <Label layoutX="200" layoutY="20" prefHeight="27.0" prefWidth="208.0" style="-fx-font-size: 18;" text="Finished Product Testing">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
 
         <Label layoutX="50" layoutY="70" text="Batch Number:" />
         <TextField fx:id="batchTF" layoutX="170" layoutY="65" prefWidth="350" />
@@ -25,7 +29,10 @@
         <TextField fx:id="resultTF" layoutX="170" layoutY="185" prefWidth="350" />
 
         <Button defaultButton="true" layoutX="170.0" layoutY="223.0" onAction="#saveTestingOnAction" text="Save Testing" />
-        <Button layoutX="493.0" layoutY="442.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="62.0" text="Logout" />
+        <Button layoutX="493.0" layoutY="442.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="62.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
 
         <TableView fx:id="testingTable" layoutX="48.0" layoutY="265.0" prefHeight="160" prefWidth="500">
             <columns>
