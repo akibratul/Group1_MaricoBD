@@ -36,7 +36,10 @@
 
         <!-- Buttons -->
         <Button defaultButton="true" layoutX="250" layoutY="330" onAction="#validateAuditOnAction" prefHeight="38.0" prefWidth="102.0" text="Validate Audit" />
-        <Button layoutX="534.0" layoutY="430.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" text="Logout" />
+        <Button layoutX="534.0" layoutY="430.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#efeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
 
         <Label fx:id="statusLabel" layoutX="250" layoutY="380" style="-fx-text-fill: green;" text="" />
       <Button defaultButton="true" layoutX="50.0" layoutY="21.0" mnemonicParsing="false" onAction="#buttononAction" prefHeight="27.0" prefWidth="66.0" text="Back" />

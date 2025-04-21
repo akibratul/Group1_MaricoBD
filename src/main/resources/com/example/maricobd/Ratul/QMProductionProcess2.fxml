@@ -6,6 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QMProductionProcessController2">
 
@@ -19,7 +20,10 @@
         <TextField fx:id="correctiveActionTF" layoutX="150.0" layoutY="125.0" prefWidth="350.0" />
 
         <Button defaultButton="true" layoutX="148.0" layoutY="163.0" onAction="#saveMonitoringOnAction" text="Save Monitoring" />
-        <Button layoutX="500.0" layoutY="403.0" onAction="#logoutOnAction" prefHeight="34.0" prefWidth="60.0" text="Logout" />
+        <Button layoutX="500.0" layoutY="403.0" onAction="#logoutOnAction" prefHeight="34.0" prefWidth="60.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
 
         <TableView fx:id="monitoringTable" layoutX="50.0" layoutY="206.0" prefHeight="180.0" prefWidth="500.0">
             <columns>

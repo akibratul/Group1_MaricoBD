@@ -6,8 +6,9 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="498.0" prefWidth="601.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.maricobd.Ratul.QProductTestingController3">
+<AnchorPane prefHeight="498.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QProductTestingController3">
 
     <children>
         <Label layoutX="200" layoutY="20" style="-fx-font-size: 18;" text="Finished Product Testing" />
@@ -25,7 +26,10 @@
         <TextField fx:id="resultTF" layoutX="170" layoutY="185" prefWidth="350" />
 
         <Button defaultButton="true" layoutX="170.0" layoutY="223.0" onAction="#saveTestingOnAction" text="Save Testing" />
-        <Button layoutX="493.0" layoutY="442.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="62.0" text="Logout" />
+        <Button layoutX="493.0" layoutY="442.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="62.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
 
         <TableView fx:id="testingTable" layoutX="48.0" layoutY="265.0" prefHeight="160" prefWidth="500">
             <columns>

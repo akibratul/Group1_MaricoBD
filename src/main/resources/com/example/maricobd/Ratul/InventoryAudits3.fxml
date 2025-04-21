@@ -23,7 +23,10 @@
       <Label layoutX="74.0" layoutY="302.0" text="Non-Conformities:" />
       <Label layoutX="76.0" layoutY="365.0" text="Corrective Actions" />
       <Button defaultButton="true" layoutX="258.0" layoutY="433.0" mnemonicParsing="false" onAction="#resolveIssueOnAction" prefHeight="36.0" prefWidth="97.0" text="Resolve Issue" />
-      <Button layoutX="514.0" layoutY="469.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="36.0" prefWidth="54.0" text="Logout" />
+      <Button layoutX="514.0" layoutY="469.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="42.0" prefWidth="64.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
       <Button defaultButton="true" layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onAction="#backonAction" text="Back" />
       <TextArea fx:id="qualityDataTA" layoutX="75.0" layoutY="214.0" prefHeight="83.0" prefWidth="495.0" />
       <TextField fx:id="nonConformitiesTF" layoutX="77.0" layoutY="329.0" prefHeight="26.0" prefWidth="495.0" />

@@ -4,8 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.maricobd.Ratul.QEnvSafCompController7">
+<AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QEnvSafCompController7">
 
     <children>
         <Label layoutX="160" layoutY="20" style="-fx-font-size: 18;" text="Environmental and Safety Compliance" />
@@ -30,7 +31,10 @@
         <!-- Buttons -->
         <Button defaultButton="true" layoutX="250" layoutY="290" onAction="#validateComplianceOnAction" prefHeight="27.0" prefWidth="131.0" text="Validate Compliance" />
         <Button defaultButton="true" layoutX="410" layoutY="290" onAction="#saveComplianceOnAction" prefHeight="27.0" prefWidth="58.0" text="Save" />
-        <Button layoutX="527.0" layoutY="424.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" text="Logout" />
+        <Button layoutX="527.0" layoutY="424.0" onAction="#logoutOnAction" prefHeight="37.0" prefWidth="65.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
 
         <Label fx:id="statusLabel" layoutX="250" layoutY="390" style="-fx-text-fill: green;" text="" />
       <Button defaultButton="true" layoutX="52.0" layoutY="21.0" mnemonicParsing="false" onAction="#backonAction" prefHeight="27.0" prefWidth="47.0" text="Back" />

@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.QEvSupplierPrController5">
 
@@ -32,7 +33,10 @@
 
         <!-- Buttons -->
         <Button defaultButton="true" layoutX="250" layoutY="330" onAction="#validateEvaluationOnAction" text="Validate Evaluation" />
-        <Button layoutX="531.0" layoutY="427.0" onAction="#logoutOnAction" prefHeight="38.0" prefWidth="74.0" text="Logout" />
+        <Button layoutX="531.0" layoutY="427.0" onAction="#logoutOnAction" prefHeight="38.0" prefWidth="74.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#efefef">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
 
         <Label fx:id="statusLabel" layoutX="250" layoutY="380" text="" />
       <Button defaultButton="true" layoutX="51.0" layoutY="21.0" mnemonicParsing="false" onAction="#backonAction" prefHeight="27.0" prefWidth="53.0" text="Back" />
