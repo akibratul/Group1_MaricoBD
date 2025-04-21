@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class TrackStockMovementsController2 {
+public class TrackStockMovements2Controller {
 
         @FXML
         private ComboBox<String> movementTypeCB;

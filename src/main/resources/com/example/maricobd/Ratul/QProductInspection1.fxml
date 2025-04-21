@@ -27,10 +27,7 @@
         <TextField fx:id="ratingTF" layoutX="150.0" layoutY="175.0" prefWidth="300.0" />
 
         <Button fx:id="saveButton" defaultButton="true" layoutX="150.0" layoutY="216.0" onAction="#saveInspectionOnAction" prefWidth="150.0" text="Save Inspection" />
-        <Button layoutX="514.0" layoutY="542.0" onAction="#logoutOnAction" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#fffdfd">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font></Button>
+        <Button layoutX="506.0" layoutY="542.0" onAction="#logoutOnAction" prefHeight="35.0" prefWidth="96.0" text="Logout" />
 
         <Label fx:id="statusLabel" layoutX="150.0" layoutY="270.0" textFill="green" />
 
