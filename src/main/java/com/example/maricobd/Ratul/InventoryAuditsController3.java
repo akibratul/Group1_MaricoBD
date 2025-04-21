@@ -48,10 +48,7 @@ public class InventoryAuditsController3 {
         String cat = categoryCB.getValue();
 
         if (dept != null && cat != null) {
-            qualityDataTA.setText("Audit Report for " + dept + " - " + cat + ":\n"
-                    + "- Stock matched: Yes\n"
-                    + "- Damaged items: 2\n"
-                    + "- Expired products: 0\n");
+            qualityDataTA.setText("Audit Report for " + dept + " - " + cat + ":\n" + "- Stock matched: Yes\n" + "- Damaged items: 2\n" + "- Expired products: 0\n");
         }
     }
 
