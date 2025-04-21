@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.maricobd.Ratul.TrackStockMovements2Controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maricobd.Ratul.TrackStockMovementsController2">
    <children>
       <Label layoutX="179.0" layoutY="23.0" text="Track Stock Movement">
          <font>
@@ -20,7 +20,10 @@
       <TextField fx:id="shipmentIdTF" layoutX="164.0" layoutY="152.0" prefHeight="26.0" prefWidth="158.0" />
       <TextField fx:id="quantityTF" layoutX="164.0" layoutY="217.0" prefHeight="26.0" prefWidth="158.0" />
       <Button defaultButton="true" layoutX="389.0" layoutY="165.0" mnemonicParsing="false" onAction="#SaveMovementOnAction" prefHeight="36.0" prefWidth="120.0" text="Save Movement " />
-      <Button layoutX="509.0" layoutY="346.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="36.0" prefWidth="58.0" text="Logout" />
+      <Button layoutX="505.0" layoutY="339.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="43.0" prefWidth="62.0" style="-fx-background-color: #df3a3a;" text="Logout" textFill="#fafafa">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
       <Button defaultButton="true" layoutX="32.0" layoutY="28.0" mnemonicParsing="false" onAction="#backonAction" text="Back" />
       <ComboBox fx:id="movementTypeCB" layoutX="164.0" layoutY="98.0" prefHeight="26.0" prefWidth="158.0" promptText="Select Type" />
       <Label fx:id="statusLabel" layoutX="191.0" layoutY="303.0" prefHeight="36.0" prefWidth="246.0" />
